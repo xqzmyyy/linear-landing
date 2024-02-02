@@ -1,0 +1,26 @@
+.pagenotfound {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.text_pnf {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.link_pnf {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.img_pnf > img {
+    width: 200px;
+    height: 200px;
+}

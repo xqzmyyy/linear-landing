@@ -1,0 +1,155 @@
+.buttons_showdepartment_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_showdepartment {
+    cursor: pointer;
+    margin-right: 30px;
+    text-decoration: none;
+    background-color: #1d1d1d;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    color: #fff;
+    transition: color 0.3s;
+    border-right: 3px solid #fff;
+    padding-right: 30px;
+}
+
+.button_showdepartment:last-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.button_showdepartment:hover {
+    color: #6e6a66;
+}
+
+.button_showdepartment.active {
+    color: #ff752e;
+}
+
+/* .mobile_list_dep {
+    display: none;
+} */
+
+.branches_cont {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 100px 0 100px;
+    height: 100%;
+    margin-top: 70px;
+    font-family: Inter;
+}
+
+.branches_department {
+    color: #ff752e;
+    text-align: start;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 30px;
+}
+
+.branches_info {
+    display: flex;
+    padding: 25px 50px;
+    flex-direction: column;
+}
+
+.branch_title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 15px;
+}
+
+.branch_description {
+    padding: 0 15px 15px;
+}
+
+.branch_desc_subtitle {
+    font-size: 18px;
+}
+
+.branch_subdesc {
+    font-size: 16px;
+}
+
+.branches_btn_pdf {
+    display: flex;
+    background: #1d1d1d;
+    border: none;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    /* .mobile_list_dep {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile_list_dep > select {
+        width: 150px;
+        text-align: center;
+        font-family: Inter;
+        border: #1d1d1d;
+        border-radius: 12px;
+        background-color: #6e6a66;
+        color: #fff;
+    } */
+
+    /* .buttons_showdepartment_cont {
+        display: none;
+    } */
+
+    .branches_department {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .branches_cont {
+        padding: 30px;
+    }
+
+    .branches_info {
+        padding: 25px 5px;
+    }
+
+    .button_showdepartment {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .branch_title {
+        font-size: 18px;
+    }
+
+    .branch_desc_subtitle {
+        font-size: 16px;
+    }
+
+    .branch_subdesc {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .button_showdepartment {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+}

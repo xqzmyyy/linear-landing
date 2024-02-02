@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  margin: 0;
+  background: #1D1D1D;
+  user-select: none;
+  font-family: Inter;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-shrink: 0; 
+  cursor: default;
+}
+/* 
+@media screen and (max-width: 1024px) {
+  .container {
+    min-height: 700px;
+  }
+} */
