@@ -4,7 +4,7 @@ import './Home.styles.css'
 const Home = () => {
     return (
         <Layout>
-            
+            <section></section>
         </Layout>
     )
 }
