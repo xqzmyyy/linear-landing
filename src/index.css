@@ -1,7 +1,9 @@
 :root {
-
+  --main-color: #ff752e;
+  --main-color-hover: #e38a46;
 }
 
 body {
   margin: 0;
+  background-color: #1D1D1D;
 }
