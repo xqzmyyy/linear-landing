@@ -1,0 +1,33 @@
+.text-card {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: var(--bg-color);
+    gap: 14px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.text-card-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text-card-text {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 650px) {
+    .text-card {
+        border: 1px solid #fff;
+        height: 200px;
+        max-width: 200px;
+        box-sizing: border-box;
+    }
+}
