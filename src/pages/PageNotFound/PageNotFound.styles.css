@@ -1,0 +1,26 @@
+.pgn-body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.text-pnf {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.link-pnf {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.img-pnf > img {
+    width: 100px;
+    height: 100px;
+}
