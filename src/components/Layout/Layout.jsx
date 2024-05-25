@@ -1,10 +1,38 @@
 import { Link } from 'react-router-dom'
 import './Layout.styles.css'
 import { footerLinks } from '../../data/footerLinks'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Layout = ({children}) => {
     const [menu, setMenu] = useState(false);
+
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const checkScrollTop = () => {
+            if (!showButton && window.pageYOffset > 600) {
+                setShowButton(true);
+            } else if (showButton && window.pageYOffset <= 600) {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener("scroll", checkScrollTop);
+
+        return () => {
+            window.removeEventListener("scroll", checkScrollTop);
+        };
+    }, [showButton]);
+
+    useEffect(() => {
+        menu
+            ? (document.body.style.overflow = "hidden")
+            : (document.body.style.overflow = "auto");
+    }, [menu]);
+
+    const clickToTop = () => {
+        window.scrollTo({ top, behavior: "smooth" });
+    };
 
 
     return (
@@ -91,6 +119,9 @@ const Layout = ({children}) => {
                     </div>
                 </div>
             </footer>
+            <button className={`to-top-btn ${showButton}`} onClick={clickToTop}>
+                <img src="/public/icons/vector.png" />
+            </button>
         </>
     )
 }

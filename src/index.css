@@ -1,9 +1,12 @@
 :root {
   --main-color: #ff752e;
   --main-color-hover: #e38a46;
+  --bg-color: #1D1D1D;
 }
 
 body {
   margin: 0;
-  background-color: #1D1D1D;
+  background-color: var(--bg-color);
+  user-select: none;
+  font-family: Inter;
 }
