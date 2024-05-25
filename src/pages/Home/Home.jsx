@@ -52,7 +52,7 @@ const Home = () => {
             <section className='container'>
                 <div className='thrd-sec-cont'>
                     <span className='thrd-sec-title'>Trusted by 1000s of Australian buisinesses over the last 16 years</span>
-                    <span className='thrd-sec-text'>
+                    <p className='thrd-sec-text'>
                         Webprofits is one of the largest inde pendent digital
                         agencies in Australia. Launched in 2006, we have helped
                         thousands of Australian businesses drive growth through
@@ -61,7 +61,7 @@ const Home = () => {
                         media, SEO, content, copywriting, design, development
                         and project management - everything you need to execute
                         a high-impact digital marketing campaign.
-                    </span>
+                    </p>
                     <div className='thrd-sec-contact-box'>
                         <span>Contact us</span>
                         <div className='arrow-bot-cont'><img src='/public/icons/vector.png' alt='contact'/></div>

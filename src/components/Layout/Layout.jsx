@@ -59,8 +59,8 @@ const Layout = ({children}) => {
                         <Link to={'#'} className='default-link-header'>
                             About Us
                         </Link>
-                        <Link to={'#'} className='contact-btn-header'>
-                            Contact
+                        <Link to={'/contacts'} className='default-link-header'>
+                            Contacts
                         </Link>
                     </nav>
                     <button
