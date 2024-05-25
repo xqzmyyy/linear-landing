@@ -2,13 +2,17 @@ header {
     display: flex;
     justify-content: center;
     width: 100vw;
+    position: fixed;
+    z-index: 2;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .header-cont {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 75px;
+    height: 70px;
     max-width: 1250px;
     width: 100%;
 }
