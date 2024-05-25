@@ -53,7 +53,7 @@ const Layout = ({children}) => {
                         >
                             Get Linear
                         </a>
-                        <Link to={'#'} className='default-link-header'>
+                        <Link to={'/projects'} className='default-link-header'>
                             Projects
                         </Link>
                         <Link to={'#'} className='default-link-header'>

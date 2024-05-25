@@ -1,0 +1,26 @@
+.projects-page-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.projects-page-title {
+    color: #fff;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .projects-page-title {
+        margin-top: 75px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .projects-page-title {
+        font-size: 18px;
+    }
+}
