@@ -56,7 +56,7 @@ const Layout = ({children}) => {
                         <Link to={'/projects'} className='default-link-header'>
                             Projects
                         </Link>
-                        <Link to={'#'} className='default-link-header'>
+                        <Link to={'/about_us'} className='default-link-header'>
                             About Us
                         </Link>
                         <Link to={'/contacts'} className='default-link-header'>
@@ -92,7 +92,7 @@ const Layout = ({children}) => {
                     <Link to={'/projects'} className='mobile-link-header'>
                         Projects
                     </Link>
-                    <Link to={'#'} className='mobile-link-header'>
+                    <Link to={'/about_us'} className='mobile-link-header'>
                         About Us
                     </Link>
                     <Link to={'/contacts'} className='mobile-link-header'>
