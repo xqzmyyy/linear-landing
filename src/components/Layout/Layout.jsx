@@ -41,7 +41,7 @@ const Layout = ({children}) => {
                 <div className='header-cont'>
                     <Link to={'/'} className='header-logo-box'>
                         <img
-                            src='/public/LinearDev_logo_header.png'
+                            src='/LinearDev_logo_header.png'
                             alt='LinearDev'
                         />
                     </Link>
@@ -70,7 +70,7 @@ const Layout = ({children}) => {
                         }}
                     >
                     <img
-                        src={!menu ? "/public/icons/menu.svg" : "/public/icons/xmark.svg"}
+                        src={!menu ? "/icons/menu.svg" : "/icons/xmark.svg"}
                         alt="menu"
                         style={{ width: "30px" }}
                     />
@@ -106,7 +106,7 @@ const Layout = ({children}) => {
             <footer>
                 <div className='footer-cont'>
                     <div className='footer-logo-box'>
-                        <img src='/public/LinearDev_logo_header.png' alt='LinearDev'/>
+                        <img src='/LinearDev_logo_header.png' alt='LinearDev'/>
                     </div>
                     <div className='footer-body-cont'>
                         {footerLinks.map((section, sectionIndex) => (
@@ -123,7 +123,7 @@ const Layout = ({children}) => {
                 </div>
             </footer>
             <button className={`to-top-btn ${showButton}`} onClick={clickToTop}>
-                <img src="/public/icons/vector.png" />
+                <img src="/icons/vector.png" />
             </button>
         </>
     )

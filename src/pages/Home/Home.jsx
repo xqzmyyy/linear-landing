@@ -23,7 +23,7 @@ const Home = () => {
                         <span className='first-sec-text-desc'>Хороший дизайн виден сразу. Отличный<br/>дизайн незаметен - Джо Сопрано»</span>
                     </div>
                     <div className='first-sec-car-box'>
-                        <img src='/public/Car.png' alt='Linear Car'/>
+                        <img src='/Car.png' alt='Linear Car'/>
                     </div>
                 </div>
             </section>
@@ -70,7 +70,7 @@ const Home = () => {
                     </p>
                     <div className='thrd-sec-contact-box'>
                         <span>Contact us</span>
-                        <div className='arrow-bot-cont'><img src='/public/icons/vector.png' alt='contact'/></div>
+                        <div className='arrow-bot-cont'><img src='/icons/vector.png' alt='contact'/></div>
                     </div>
                 </div>
             </section>
