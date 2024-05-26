@@ -157,10 +157,6 @@
 }
 
 @media screen and (max-width: 700px) {
-    /* .video-bg {
-        display: none;
-    } */
-
     .snd-sec-text-cont {
         align-items: center;
         text-align: center;
