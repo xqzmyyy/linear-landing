@@ -1,10 +1,16 @@
 import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout/Layout'
-import './Projects.styles.css'
 import { projectsArr } from '../../data/projects'
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import { useEffect } from 'react'
+
+import './Projects.styles.css'
 
 const Projects = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Layout>
             <Helmet>

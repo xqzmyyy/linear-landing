@@ -1,10 +1,16 @@
 import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout/Layout'
-import './Contacts.styles.css'
 import { branchesArr } from '../../data/branches'
 import Branches from '../../components/Branches/Branches'
+import { useEffect } from 'react'
+
+import './Contacts.styles.css'
 
 const Contacts = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Layout>
             <Helmet>

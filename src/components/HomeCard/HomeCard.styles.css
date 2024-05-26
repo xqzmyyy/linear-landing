@@ -7,26 +7,55 @@
     border-radius: 12px;
     background-color: var(--bg-color);
     gap: 14px;
-    max-width: 150px;
+    max-width: 250px;
     text-align: center;
 }
 
 .text-card-title {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
 .text-card-text {
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1024px) {
+    .text-card {
+        max-width: 200px;
+        padding: 3%;
+    }
+
+    .text-card-title {
+        font-size: 18px;
+    }
+
+    .text-card-text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-card {
+        max-width: 170px;
+    }
+
+    .text-card-title {
+        font-size: 16px;
+    }
+
+    .text-card-text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 700px) {
     .text-card {
         border: 1px solid #fff;
-        height: 200px;
+        height: 250px;
         max-width: 200px;
         box-sizing: border-box;
     }

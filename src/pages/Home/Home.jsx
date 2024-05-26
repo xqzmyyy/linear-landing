@@ -1,10 +1,16 @@
 import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout/Layout'
-import './Home.styles.css'
 import HomeCard from '../../components/HomeCard/HomeCard';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import { useEffect } from 'react';
+
+import './Home.styles.css'
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Layout>
             <Helmet>
@@ -28,24 +34,24 @@ const Home = () => {
                     loop="loop"
                     muted="muted"
                 >
-                    <source src="/public/bg_video.mp4" type="video/mp4"></source>
+                    <source src="/bg_video.mp4" type="video/mp4"></source>
                 </video>
                 <div className='snd-sec-text-cont'>
-                    <span className='snd-sec-text-title'>Мечты или реальность?</span>
-                    <span className='snd-sec-text-subtitle'>Члены нашей команды, постигшие тоноксти изъяны веб-индустрии, осуществят ваши мечты в реальность.</span>
+                    <span className='snd-sec-text-title'>Innovation and Reliability in Our Hands</span>
+                    <span className='snd-sec-text-subtitle'>Innovation that Inspires. Reliability That Calms. Experience an Exclusive Partner Experience with Us</span>
                 </div>
                 <div className='snd-sec-card-cont'>
                     <HomeCard 
-                        title={'Linear.js'}
-                        text={'Client-Side Serverless JavaScript Framework'}
+                        title={'Flexibility and Scalability'}
+                        text={'We pride ourselves on our ability to adapt to your unique needs. Our flexibility to integrate off-the-shelf modules allows us to scale quickly, providing you with solutions that meet your expectations'}
                     />
                     <HomeCard 
-                        title={'New awesome method of developing'}
-                        text={'We creeated amazing site fast and easy'}
+                        title={'Transparency and Communication'}
+                        text={'With us, you will always be kept informed about the development process. We value open and clear communication, giving you all the information you need about the status of the project and the challenges we face. Your participation and attention are important to us'}
                     />
                     <HomeCard 
-                        title={'New awesome method of developing'}
-                        text={'We creeated amazing site fast and easy'}
+                        title={'Quality and Innovation'}
+                        text={'We strive for high quality standards despite limited time and budget. Our team delivers products of the highest quality, using innovative approaches and artificial intelligence to optimize development processes'}
                     />
                 </div>
             </section>
