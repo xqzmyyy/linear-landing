@@ -79,6 +79,9 @@ const Layout = ({children}) => {
             </header>
             <div className={`mobile-menu ${menu}`}>
                 <div className='mobile-menu-cont'>
+                    <Link to={'/'} className='mobile-link-header'>
+                        Home
+                    </Link>
                     <a 
                         href='https://github.com/LinearDev/LinearJS' 
                         target='_blank'
@@ -86,14 +89,14 @@ const Layout = ({children}) => {
                     >
                         Get Linear
                     </a>
-                    <Link to={'#'} className='mobile-link-header'>
+                    <Link to={'/projects'} className='mobile-link-header'>
                         Projects
                     </Link>
                     <Link to={'#'} className='mobile-link-header'>
                         About Us
                     </Link>
-                    <Link to={'#'} className='mobile-link-header'>
-                        Contact
+                    <Link to={'/contacts'} className='mobile-link-header'>
+                        Contacts
                     </Link>
                 </div>
             </div>
