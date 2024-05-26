@@ -1,1 +1,1 @@
-Simple landing for LinearDev. Developed using React and JavaScript
+Simple landing for LinearDev. Developed using React and JavaScript by Kamila Koval
