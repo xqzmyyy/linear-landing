@@ -23,3 +23,10 @@ body {
 p {
   margin: 0;
 }
+
+@media screen and (max-width: 435px) {
+  .container {
+    height: auto;
+    padding: 15% 5%;
+  }
+}

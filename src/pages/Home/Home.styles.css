@@ -178,6 +178,12 @@
     }
 }
 
+@media screen and (max-width: 430px) {
+    .first-sec-text-title {
+        padding-top: 50px;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .snd-sec-card-cont {
         display: flex;
