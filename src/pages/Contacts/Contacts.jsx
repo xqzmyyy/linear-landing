@@ -41,23 +41,13 @@ const Contacts = () => {
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Our Branches</h2>
+            <section className='contacts-page-branch-sec'>
+                <h2 className='contacts-page-branch-head'>Our Branches</h2>
                 <div>
-                    {branchesArr.map(branch => (
-                        <div key={branch.dep}>
-                            <h5>{branch.dep}</h5>
-                            {branch.fields.map((field, index) => (
-                                <Branches
-                                    key={index}
-                                    pos={field.pos}
-                                    sum={field.sum}
-                                    exp={field.exp}
-                                />
-                            ))}
-                        </div>
-                    ))}
-                </div>
+                {branchesArr.map(branch => (
+                    <Branches key={branch.dep} dep={branch.dep} fields={branch.fields} />
+                ))}
+            </div>
             </section>
         </Layout>
     )

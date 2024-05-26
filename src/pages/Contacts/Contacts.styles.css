@@ -62,3 +62,17 @@
     text-decoration: none;
     color: #fff;
 }
+
+.contacts-page-branch-sec {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.contacts-page-branch-head {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
