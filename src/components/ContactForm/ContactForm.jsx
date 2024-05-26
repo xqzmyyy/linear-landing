@@ -1,7 +1,7 @@
 import { memo, useState } from 'react';
 import './ContactForm.styles.css'
 
-const ContactForm = memo(() => {
+const ContactForm = memo(({ onSendMessage }) => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
     const [text, setText] = useState("");
@@ -12,13 +12,15 @@ const ContactForm = memo(() => {
                 className="form-cont"
                 onSubmit={(e) => {
                     e.preventDefault();
+                    if (email && name && text) {
+                        onSendMessage();
+                    }
                 }}
             >
                 <input
                     type='email'
                     placeholder='Email'
                     autoComplete='off'
-                    autoFocus='off'
                     className='default-input'
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
@@ -28,7 +30,6 @@ const ContactForm = memo(() => {
                     type='text'
                     placeholder='Name'
                     autoComplete='off'
-                    autoFocus='off'
                     className='default-input'
                     onChange={(e) => setName(e.target.value)}
                     value={name}
@@ -42,11 +43,11 @@ const ContactForm = memo(() => {
                     required
                 />
                 <button
-                        disabled={!email || !name || !text}
-                        className="default-btn"
-                    >
-                        Send Message
-                    </button>
+                    disabled={!email || !name || !text}
+                    className="default-btn"
+                >
+                    Send Message
+                </button>
             </form>
         </div>
     )
