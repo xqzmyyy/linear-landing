@@ -123,7 +123,7 @@ const Layout = ({children}) => {
                 </div>
             </footer>
             <button className={`to-top-btn ${showButton}`} onClick={clickToTop}>
-                <img src="/icons/vector.png" />
+                <img src="/icons/vector.png"/>
             </button>
         </>
     )
