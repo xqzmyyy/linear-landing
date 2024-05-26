@@ -6,7 +6,7 @@ const PageNotFound = () => {
     return (
         <div className="pgn-body">
             <div className="img-pnf">
-                <img src="/public/icons/broken_link.svg" alt="404" />
+                <img src="/icons/broken_link.svg" alt="404" />
             </div>
             <div className="text-pnf">Page not found</div>
             <Link to="/" className="link-pnf">
