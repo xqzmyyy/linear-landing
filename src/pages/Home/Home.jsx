@@ -2,14 +2,40 @@ import { Helmet } from 'react-helmet'
 import Layout from '../../components/Layout/Layout'
 import HomeCard from '../../components/HomeCard/HomeCard';
 import ContactForm from '../../components/ContactForm/ContactForm';
-import { useEffect } from 'react';
+import CustomMessage from '../../components/CustomMessage/CustomMessage';
+import { useEffect, useState } from 'react';
 
 import './Home.styles.css'
 
 const Home = () => {
+    const [isVideoVisible, setIsVideoVisible] = useState(true);
+    const [isNotificationVisible, setIsNotificationVisible] = useState(false);
+
     useEffect(() => {
         window.scrollTo(0, 0);
+
+        const handleResize = () => {
+            setIsVideoVisible(window.innerWidth > 700);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
+
+    useEffect(() => {
+        let timer;
+        if (isNotificationVisible) {
+            timer = setTimeout(() => {
+                setIsNotificationVisible(false);
+            }, 4000);
+        }
+        return () => clearTimeout(timer);
+    }, [isNotificationVisible]);
 
     return (
         <Layout>
@@ -28,14 +54,16 @@ const Home = () => {
                 </div>
             </section>
             <section className='container'>
-            <video
-                    className="video-bg"
-                    autoPlay="autoplay"
-                    loop="loop"
-                    muted="muted"
-                >
-                    <source src="/bg_video.mp4" type="video/mp4"></source>
-                </video>
+                {isVideoVisible && (
+                    <video
+                        className="video-bg"
+                        autoPlay="autoplay"
+                        loop="loop"
+                        muted="muted"
+                    >
+                        <source src="/bg_video.mp4" type="video/mp4"></source>
+                    </video>
+                )}
                 <div className='snd-sec-text-cont'>
                     <span className='snd-sec-text-title'>Innovation and Reliability in Our Hands</span>
                     <span className='snd-sec-text-subtitle'>Innovation that Inspires. Reliability That Calms. Experience an Exclusive Partner Experience with Us</span>
@@ -77,9 +105,10 @@ const Home = () => {
             <section className='container'>
                 <h2 className='frth-sec-title'>Contact Us</h2>
                 <div className='form-cont-home-page'>
-                    <ContactForm/>
+                    <ContactForm onSendMessage={() => setIsNotificationVisible(true)} />
                 </div>
             </section>
+            {isNotificationVisible && <CustomMessage message="Message sent successfully!" />}
         </Layout>
     )
 }

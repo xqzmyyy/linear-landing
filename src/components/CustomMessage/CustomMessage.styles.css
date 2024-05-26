@@ -1,0 +1,32 @@
+.bottom-message {
+    position: fixed;
+    bottom: 20px;
+    right: -300px;
+    width: 300px;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    border: 2px solid var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, right 1s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .bottom-message.show {
+    right: 20px;
+    opacity: 1;
+  }
+  
+  .bottom-message.hide {
+    right: 300px;
+    opacity: 0;
+  }
+  
+  .bottom-message.hide-reverse {
+    right: -300px;
+    opacity: 0;
+  }
